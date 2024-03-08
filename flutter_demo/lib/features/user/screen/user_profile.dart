@@ -13,7 +13,7 @@ class UserProfile extends StatelessWidget {
       ),
       body: SingleChildScrollView(
           child: Container(
-            padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 100),
+            padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 50),
             child: Column(
               children: [
                 const Center(
@@ -26,7 +26,7 @@ class UserProfile extends StatelessWidget {
                 Text("Ta Minh Dang", style: Theme.of(context).textTheme.headlineMedium,),
                 const SizedBox(height: 3,),
                 Text("dangtmhe181967@gfpt.edu.vn", style: Theme.of(context).textTheme.bodySmall,),
-                const SizedBox(height: 30,),
+                const SizedBox(height: 10,),
                 ListTile(
                   leading: const Icon(Icons.account_circle, color: Colors.blueGrey, size: 40,),
                   title: Text("My Account", style: TextStyle(
@@ -143,19 +143,17 @@ class UserProfile extends StatelessWidget {
               )
             ),
           ),
-      bottomNavigationBar: ClipRRect(
-          borderRadius: const BorderRadius.vertical(top: Radius.circular(30)),
-          child: Container(
+      bottomNavigationBar: Container(
             decoration: const BoxDecoration(
               boxShadow: [
                 BoxShadow(
-
-                  blurRadius: 10.0,
-                  offset: Offset(0, -10)
+                  blurRadius: 20,
                 )
               ]
             ),
-            child: BottomNavigationBar(
+            child: ClipRRect(
+              borderRadius: const BorderRadius.vertical(top: Radius.circular(30)),
+              child: BottomNavigationBar(
               backgroundColor: Colors.black,
               showUnselectedLabels: true,
               showSelectedLabels: true,
