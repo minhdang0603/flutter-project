@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 
 class UserProfile extends StatelessWidget {
+
+  bool value = false;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -92,7 +95,7 @@ class UserProfile extends StatelessWidget {
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(100),
                     ),
-                    child: const Icon(Icons.toggle_off_outlined, color: Colors.blueGrey, size: 50,),
+                    child: Switch(value: value, onChanged: (value){}),
                   ),
                 ),
                 const SizedBox(height: 5,),

@@ -41,7 +41,7 @@ class HelloScreen extends StatelessWidget {
               )
             ),
             const SizedBox(height: 10,),
-            normalText("This is first widget", Colors.blueGrey)
+            normalText("This is first widgets", Colors.blueGrey)
           ],
         ),
       ),
